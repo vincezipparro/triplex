@@ -11,8 +11,12 @@ int main ()
     int b = 8;
     int c = 12;
 
-    int sum = a + b + c
+    int sum = a + b + c;
+    int mult = a * b * c;
 
     std::cout << sum;
+    std::cout << std::endl;
+
+    std::cout << mult;
     std::cout << std::endl;
 }
