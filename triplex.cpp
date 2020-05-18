@@ -2,10 +2,8 @@
 
 int main ()
 {
-    std::cout << "You are a secret agent breaking into a secure server room";
-    std::cout << std::endl;
-    std::cout << "You need to enter the correct codes to continue...";
-    std::cout << std::endl;
+    std::cout << "You are a secret agent breaking into a secure server room...\n";
+    std::cout << "You need to enter the correct codes to continue...\n\n";
 
     const int CodeA = 4;
     const int CodeB = 8;
@@ -14,27 +12,25 @@ int main ()
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
 
-    std::cout << "There are three numbers in the code" << std ::endl;
-    std::cout << "The codes add up to: " << CodeSum << std::endl;
-    std::cout << "The codes product is: " << CodeProduct << std::endl;
+    std::cout << "There are three numbers in the code\n";
+    std::cout << "\nThe codes add up to: " << CodeSum;
+    std::cout << "\nThe codes product is: " << CodeProduct << std::endl;
 
     int GuessA, GuessB, GuessC;
 
-    std::cin >>  GuessA;
-    std::cin >>  GuessB;
-    std::cin >>  GuessC;
-    std::cout << "You entered: " << GuessA << GuessB << GuessC << std::endl;
+    std::cin >>  GuessA >> GuessB >> GuessC;
+    std::cout << "\nYou entered: " << GuessA << GuessB << GuessC << std::endl;
 
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "You win!" << std::endl;
+        std::cout << "You win!\n";
     }
     else
     {
-        std::cout << "You lose" << std::endl;
+        std::cout << "You lose\n";
     }
     
 }
