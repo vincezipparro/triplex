@@ -17,4 +17,9 @@ int main ()
     std::cout << "There are three numbers in the code" << std ::endl;
     std::cout << "The codes add up to: " << CodeSum << std::endl;
     std::cout << "The codes product is: " << CodeProduct << std::endl;
+
+    int PlayerGuess;
+
+    std::cin >>  PlayerGuess;
+    std::cout << "You entered: " << PlayerGuess << std::endl;
 }
