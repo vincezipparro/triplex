@@ -14,9 +14,6 @@ int main ()
     int sum = a + b + c;
     int mult = a * b * c;
 
-    std::cout << sum;
-    std::cout << std::endl;
-
+    std::cout << sum << std::endl;
     std::cout << mult;
-    std::cout << std::endl;
 }
