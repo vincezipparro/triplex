@@ -18,8 +18,23 @@ int main ()
     std::cout << "The codes add up to: " << CodeSum << std::endl;
     std::cout << "The codes product is: " << CodeProduct << std::endl;
 
-    int PlayerGuess;
+    int GuessA, GuessB, GuessC;
 
-    std::cin >>  PlayerGuess;
-    std::cout << "You entered: " << PlayerGuess << std::endl;
+    std::cin >>  GuessA;
+    std::cin >>  GuessB;
+    std::cin >>  GuessC;
+    std::cout << "You entered: " << GuessA << GuessB << GuessC << std::endl;
+
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
+
+    if(GuessSum == CodeSum && GuessProduct == CodeProduct)
+    {
+        std::cout << "You win!" << std::endl;
+    }
+    else
+    {
+        std::cout << "You lose" << std::endl;
+    }
+    
 }
