@@ -8,6 +8,9 @@ int main ()
     std::cout << std::endl;
 
     int a = 4;
-    std::cout << a;
+    int b = 8;
+    int c = 12;
+
+    std::cout << a + b + c;
     std::cout << std::endl;
 }
