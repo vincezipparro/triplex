@@ -14,7 +14,7 @@ int main ()
     const int sum = a + b + c;
     const int mult = a * b * c;
 
-    std::cout << sum << std::endl;
-    std::cout << mult;
-    std::cout<< std::endl;
+    std::cout << "There are three numbers in the code" << std ::endl;
+    std::cout << "The codes add up to: " << sum << std::endl;
+    std::cout << "The codes product is: " << mult << std::endl;
 }
