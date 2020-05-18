@@ -7,14 +7,14 @@ int main ()
     std::cout << "You need to enter the correct codes to continue...";
     std::cout << std::endl;
 
-    const int a = 4;
-    const int b = 8;
-    const int c = 12;
+    const int CodeA = 4;
+    const int CodeB = 8;
+    const int CodeC = 12;
 
-    const int sum = a + b + c;
-    const int mult = a * b * c;
+    const int CodeSum = CodeA + CodeB + CodeC;
+    const int CodeProduct = CodeA * CodeB * CodeC;
 
     std::cout << "There are three numbers in the code" << std ::endl;
-    std::cout << "The codes add up to: " << sum << std::endl;
-    std::cout << "The codes product is: " << mult << std::endl;
+    std::cout << "The codes add up to: " << CodeSum << std::endl;
+    std::cout << "The codes product is: " << CodeProduct << std::endl;
 }
