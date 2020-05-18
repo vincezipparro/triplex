@@ -3,11 +3,14 @@
 
 using namespace Triplex;
 
-void Game::PlayGame()
+void Game::PrintIntroduction()
 {
     std::cout << "You are a secret agent breaking into a secure server room...\n";
     std::cout << "You need to enter the correct codes to continue...\n\n";
+}
 
+void Game::PlayGame()
+{
     const int CodeA = 4;
     const int CodeB = 8;
     const int CodeC = 12;
@@ -35,5 +38,11 @@ void Game::PlayGame()
     {
         std::cout << "You lose\n";
     }
+}
+
+void Game::PrintIntroduction()
+{
+    std::cout << "You are a secret agent breaking into a secure server room...\n";
+    std::cout << "You need to enter the correct codes to continue...\n\n";
 }
         
