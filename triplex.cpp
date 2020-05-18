@@ -7,4 +7,7 @@ int main ()
     std::cout << "You need to enter the correct codes to continue...";
     std::cout << std::endl;
 
+    int a = 4;
+    std::cout << a;
+    std::cout << std::endl;
 }
