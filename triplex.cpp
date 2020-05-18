@@ -7,13 +7,14 @@ int main ()
     std::cout << "You need to enter the correct codes to continue...";
     std::cout << std::endl;
 
-    int a = 4;
-    int b = 8;
-    int c = 12;
+    const int a = 4;
+    const int b = 8;
+    const int c = 12;
 
-    int sum = a + b + c;
-    int mult = a * b * c;
+    const int sum = a + b + c;
+    const int mult = a * b * c;
 
     std::cout << sum << std::endl;
     std::cout << mult;
+    std::cout<< std::endl;
 }
