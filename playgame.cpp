@@ -9,7 +9,7 @@ void Game::PrintIntroduction()
     std::cout << "You need to enter the correct codes to continue...\n\n";
 }
 
-void Game::PlayGame()
+bool Game::PlayGame()
 {
     const int CodeA = 4;
     const int CodeB = 8;
@@ -33,9 +33,11 @@ void Game::PlayGame()
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         std::cout << "You win!\n";
+        return true;
     }
     else
     {
         std::cout << "You lose\n";
+        return false;
     }
-           
+}

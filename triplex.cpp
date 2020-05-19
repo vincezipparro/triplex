@@ -10,7 +10,7 @@ int main()
     while(true)
     {
         Execute.PrintIntroduction();
-        Execute.PlayGame();
+        bool bLevelComplete = Execute.PlayGame();
         std::cin.clear();
         std::cin.ignore();
     }
