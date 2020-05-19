@@ -34,12 +34,12 @@ bool Game::PlayGame(int Difficulty)
 
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "You win!\n";
+        std::cout << "You win! now onto the next level\n";
         return true;
     }
     else
     {
-        std::cout << "You lose\n";
+        std::cout << "You lose, please try again\n";
         return false;
     }
 }

@@ -7,9 +7,9 @@ int main()
 {
     Game Execute;
     int LevelDifficulty = 1;
-    const int maxDifficulty = 10;
+    const int MaxDifficulty = 5;
 
-    while(true) // Loop game till all levels are completely
+    while(LevelDifficulty <= MaxDifficulty) // Loop game till all levels are completed
     {
         // Execute.PrintIntroduction(7);
         bool bLevelComplete = Execute.PlayGame(LevelDifficulty);
@@ -22,5 +22,6 @@ int main()
         }
     }
 
+    std::cout << "You win the Game! exiting....\n";
     return 0;
 }
