@@ -5,7 +5,7 @@ using namespace Triplex;
 
 void Game::PrintIntroduction()
 {
-    std::cout << "You are a secret agent breaking into a secure server room...\n";
+    std::cout << "\n\nYou are a secret agent breaking into a secure server room...\n";
     std::cout << "You need to enter the correct codes to continue...\n\n";
 }
 
@@ -38,11 +38,4 @@ void Game::PlayGame()
     {
         std::cout << "You lose\n";
     }
-}
-
-void Game::PrintIntroduction()
-{
-    std::cout << "You are a secret agent breaking into a secure server room...\n";
-    std::cout << "You need to enter the correct codes to continue...\n\n";
-}
-        
+           
