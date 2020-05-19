@@ -1,5 +1,6 @@
 #include "headers.h"
 #include <iostream>
+#include <ctime>
 
 using namespace Triplex;
 
@@ -13,9 +14,9 @@ bool Game::PlayGame(int Difficulty)
 {
     PrintIntroduction(Difficulty);
 
-    const int CodeA = 4;
-    const int CodeB = 8;
-    const int CodeC = 12;
+    const int CodeA = rand() % Difficulty + Difficulty;
+    const int CodeB = rand() % Difficulty + Difficulty;
+    const int CodeC = rand() % Difficulty + Difficulty;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
@@ -34,12 +35,12 @@ bool Game::PlayGame(int Difficulty)
 
     if(GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout << "You win! now onto the next level\n";
+        std::cout << "---- You win! now onto the next level ----\n";
         return true;
     }
     else
     {
-        std::cout << "You lose, please try again\n";
+        std::cout << "**** You lose, please try again ****\n";
         return false;
     }
 }
