@@ -2,7 +2,7 @@ namespace Triplex
 {
     class Game{
         public:
-        bool PlayGame();
+        bool PlayGame(int Difficulty);
         void PrintIntroduction(int Difficulty);
     };
 }

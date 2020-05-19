@@ -9,8 +9,10 @@ void Game::PrintIntroduction(int Difficulty)
     std::cout << " secure server room...\nYou need to enter the correct codes to continue...\n\n";
 }
 
-bool Game::PlayGame()
+bool Game::PlayGame(int Difficulty)
 {
+    PrintIntroduction(Difficulty);
+
     const int CodeA = 4;
     const int CodeB = 8;
     const int CodeC = 12;
