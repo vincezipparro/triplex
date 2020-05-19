@@ -3,10 +3,10 @@
 
 using namespace Triplex;
 
-void Game::PrintIntroduction()
+void Game::PrintIntroduction(int Difficulty)
 {
-    std::cout << "\n\nYou are a secret agent breaking into a secure server room...\n";
-    std::cout << "You need to enter the correct codes to continue...\n\n";
+    std::cout << "\n\nYou are a secret agent breaking into a level " << Difficulty;
+    std::cout << " secure server room...\nYou need to enter the correct codes to continue...\n\n";
 }
 
 bool Game::PlayGame()
